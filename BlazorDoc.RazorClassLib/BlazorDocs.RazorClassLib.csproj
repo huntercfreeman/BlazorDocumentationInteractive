@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlazorMonaco\BlazorMonaco\BlazorMonaco.csproj" />
+    <ProjectReference Include="..\Fork-BlazorMonaco\BlazorMonaco\BlazorMonaco.csproj" />
   </ItemGroup>
 
 </Project>
