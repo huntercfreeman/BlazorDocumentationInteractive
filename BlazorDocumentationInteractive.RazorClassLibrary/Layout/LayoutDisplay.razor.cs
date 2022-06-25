@@ -9,9 +9,14 @@ namespace BlazorDocumentationInteractive.RazorClassLibrary.Layout;
 
 public partial class LayoutDisplay : LayoutComponentBase
 {
+    bool _isDarkMode = true;
     bool _drawerOpen = true;
 
-    void DrawerToggle()
+    private string ToggleThemeIcon => _isDarkMode
+        ? MudBlazor.Icons.Filled.LightMode
+        : MudBlazor.Icons.Filled.DarkMode;
+
+    private void DrawerToggle()
     {
         _drawerOpen = !_drawerOpen;
     }
